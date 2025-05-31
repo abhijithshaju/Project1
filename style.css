@@ -1,62 +1,69 @@
-*{
+* {
     scroll-behavior: smooth;
 }
 
-body{
-    
+body {
+
     /*background-repeat: no-repeat;*/
-    
+
     backdrop-filter: blur(3px);
     margin: 0;
 }
-h1{
-    color:rgb(1, 5, 0);
+
+h1 {
+    color: rgb(1, 5, 0);
     animation: move 5s;
-    
+
 }
-p{
-    font-style:italic;
+
+p {
+    font-style: italic;
     font-size: larger;
 }
 
-.navbar{
+.navbar {
 
     background-color: rgb(15, 95, 100);
     padding: 1px;
-    position:sticky;
+    position: sticky;
     top: 0;
     border-radius: 10px;
-    
+
 
 
 }
-.navbar ul{
-    width:100%;
-    display:flex;
-    justify-content:space-evenly;
+
+.navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
 
-    
+
 }
-.navbar li{
+
+.navbar li {
     font-size: 18;
-    font-family:Arial, Helvetica, sans-serif;
-    cursor:pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
     font-weight: bold;
 
 
 
 }
-.navbar li:hover{
+
+.navbar li:hover {
     transform: translateY(-5px);
     transition: .3s ease;
     color: lavender;
 }
- img:hover{
+
+img:hover {
     transform: scale(105%);
     transition: .5s ease;
 }
-form{
+
+form {
     background-color: rgba(218, 8, 8, 0.247);
     width: 500;
     border: solid;
@@ -66,148 +73,172 @@ form{
     padding-top: 10;
 
 }
-button{
+
+button {
     background-color: black;
     color: aqua;
-    width:100 ;
-    height:30;
+    width: 100;
+    height: 30;
     border-radius: 15px;
 }
-.home{
-    background-image:url("luffy.jpg");
+
+.home {
+    background-image: url("luffy.jpg");
     background-size: cover;
     display: flex;
-    width:100%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     justify-content: center;
-    
+
 }
 
-h1{
+h1 {
     color: aliceblue;
     background-color: rgba(0, 0, 0, 0.678);
     padding: 10px;
     border-radius: 10px;
-    
+
 
 }
-.sign{
-    background-image:url("jaj.jpg");
+
+.sign {
+    background-image: url("jaj.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:100vh;
+    height: 100vh;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-label{
+
+label {
     font-size: larger;
 
-    
+
 }
-.aboutme{
-    background-image:url("lala.jpg");
+
+.aboutme {
+    background-image: url("lala.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    height:100vh;
+    justify-content: center;
+    height: 100vh;
 }
-details{
+
+details {
     font-size: 16px;
     background-color: rgb(5, 48, 48);
-    padding:3px;
-    border-radius:10px ;
+    padding: 3px;
+    border-radius: 10px;
     margin-top: 5px;
     cursor: pointer;
     width: 40%;
 
 
 }
-summary{
+
+summary {
     font-size: 20px;
 }
-.aboutme h4{
+
+.aboutme h4 {
     font-size: 30;
-    margin-bottom:0px;
+    margin-bottom: 0px;
     background-color: rgba(0, 0, 0, 0.534);
     color: rgb(0, 9, 17);
-    width:10%;
+    width: 10%;
     padding: 7px;
     border-radius: 10px;
 }
-span{
+
+span {
     margin-left: 30px;
 }
 
-.det1{
-   background-color: rgb(26, 26, 172); 
+.det1 {
+    background-color: rgb(26, 26, 172);
 }
-.det2{
+
+.det2 {
     background-color: rgb(49, 49, 196);
 }
-.det3{
+
+.det3 {
     background-color: rgb(76, 76, 206);
 }
-.det4{
+
+.det4 {
     background-color: rgb(119, 119, 201);
 }
-.sign h2{
+
+.sign h2 {
     font-size: 30;
     background-color: rgba(0, 0, 0, 0.445);
     padding: 5;
     border-radius: 10px;
     color: rgb(0, 8, 15);
 }
-.contact{
-    height:100vh;
+
+.contact {
+    height: 100vh;
     scroll-margin: 60px;
     background-image: url("snail.webp");
 }
-.contact h2{
+
+.contact h2 {
     font-size: 30;
     background-color: rgba(0, 0, 0, 0.349);
     padding: 5px;
     border-radius: 10px;
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   color: antiquewhite;
-   
-}
-img{
-    animation:move 5s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: antiquewhite;
 
 }
-@keyframes size{
-    0%{
-        height:"400";
+
+img {
+    animation: move 5s;
+
+}
+
+@keyframes size {
+    0% {
+        height: "400";
     }
-    100%{
-        height:"250";
+
+    100% {
+        height: "250";
     }
 }
-@keyframes move{
-    0%{
+
+@keyframes move {
+    0% {
         transform: translateY(50px);
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
     }
 }
-.a{
+
+.a {
     animation: move 5s;
 }
-.b{
+
+.b {
     animation: move 5s;
 }
-.c{
+
+.c {
     animation: move 5s;
 }
