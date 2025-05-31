@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>
+        Calculator app
+    </title>
+</head>
+<link rel="stylesheet" href="calc.css">
+
+<body>
+    <div>
+        <form>
+            <label>Enter the first number :</label>
+            <input id="first"></br>
+            </br>
+            <label>Enter the second number:</label>
+            <input id="second"></br>
+
+        </form></br>
+        
+        <select id="operator">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        <button onclick="calculate()">Submit</button>
+        <h2>Result:</h2>
+        <h1 id="resultText"></h1>
+    </div>
+    <script>
+
+
+        function calculate() {
+            let no1 = parseInt(document.getElementById("first").value);
+            let no2 = parseInt(document.getElementById("second").value);
+            let op = document.getElementById("operator").value;
+            var result = 0;
+            if (op == "+") {
+                result = no1 + no2;
+            }
+            else if (op == "-") {
+                result = no1 - no2;
+
+            }
+            else if (op == "*") {
+                result = no1 * no2;
+            }
+            else if (op == "/") {
+                result = no1 / no2;
+            }
+            document.getElementById("resultText").innerText=result;
+        
+            event.preventDefault();
+        }
+        console.log(result);
+
+    </script>
+    <a href="./abhi.html"><h4>Go Back</h4></a>
+</body>
+
+</html>
